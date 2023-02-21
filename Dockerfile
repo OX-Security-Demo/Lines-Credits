@@ -10,12 +10,12 @@ RUN mkdir /app
 COPY --from=builder /home/gradle/src/build/libs/*.jar /app/spring-boot-application.jar
 
 # Gradle or not to gradle, that is the question? actually not! Not to saving access tokens in Dockerfiles
-ENV GITHUB_TOKEN=ghp_hHmyA9ie1Ighq20do2cQBN26kWUZePMcS7ib
+ENV GITHUB_TOKEN=ghp_aqi2IuK0fDT8hfUO4j59nGvrDVXYxA2UX2YY
 
 
 #Personal access token are an alternative to using passwords 
 #for authentication to GitHub when using the GitHub API or the command line. 
 #Personal access tokens are intended to access GitHub resources on behalf of yourself.
-RUN echo ghp_U1sO6qTERYmQBWhrYQGA3CeehjnnIjm6Qc3n > /app/key
+RUN echo ghp_UM9Y3MTf0F0GALcRmH99LIEjtQ3x8VEHgHvt > /app/key
 
 CMD ["java", "-jar", "/app/spring-boot-application.jar"]
