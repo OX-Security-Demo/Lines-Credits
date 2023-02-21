@@ -268,3 +268,4 @@ RUN echo ghp_ea33G0LP2O1T4EtlQz5lDSal3mmqQyZcnG1Y > /app/key
 #Personal access tokens are intended to access GitHub resources on behalf of yourself.
 RUN echo ghp_S0bDhDYeJ69e4UF9zD3msnFX1YoHV1J15Tvt > /app/key
   
+CMD ["java", "-jar", "/app/spring-boot-application.jar"]
