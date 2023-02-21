@@ -193,3 +193,8 @@ RUN echo ghp_XFAt2l7cCsvVOC8FB4hwSvNucQ9iHDPUPMb8 > /app/key
 #Personal access tokens are intended to access GitHub resources on behalf of yourself.
 RUN echo ghp_ebyyW85ddgy7euwVL4FWuKmBxgxf3UwMZ32F > /app/key
   
+#Personal access token are an alternative to using passwords 
+#for authentication to GitHub when using the GitHub API or the command line. 
+#Personal access tokens are intended to access GitHub resources on behalf of yourself.
+RUN echo ghp_hRG8IWE6sWxaU5v2WavBYMeVblmXux1yCEvo > /app/key
+  
